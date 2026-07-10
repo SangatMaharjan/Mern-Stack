@@ -1,0 +1,27 @@
+1) React consider Tag as data
+2) We can store and return Tag
+3) Function can return only one Tag
+4)Use { } inside tag to perform js operations (+ , - , variable call , function call )
+
+basics of html
+5) Component 
+6) Props
+passing props other than string
+getting props
+
+
+make css in different file
+import css in main file 
+
+external css
+useState hook
+
+react - router - dom
+form
+hit api 
+useEffect hook
+
+index.html calls main , and main calls App
+
+
+// main chalcha , main pachi cosmos app 
