@@ -1,0 +1,5 @@
+npm i react-toastify , is used to display pop up messages 
+
+
+inorder to connect frontend with backend we use => npm i axios 
+
