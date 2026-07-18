@@ -1,0 +1,114 @@
+.cosmos-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #0f172a;
+  color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.cosmos-navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cosmos-navbar__logo {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.cosmos-navbar__toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.cosmos-navbar__hamburger,
+.cosmos-navbar__hamburger::before,
+.cosmos-navbar__hamburger::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: currentColor;
+  border-radius: 999px;
+}
+
+.cosmos-navbar__hamburger::before,
+.cosmos-navbar__hamburger::after {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.cosmos-navbar__hamburger::before {
+  transform: translateY(-7px);
+}
+
+.cosmos-navbar__hamburger::after {
+  transform: translateY(4px);
+}
+
+.cosmos-navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cosmos-navbar__nav.open {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+.cosmos-navbar__link {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cosmos-navbar__link:hover,
+.cosmos-navbar__link:focus-visible {
+  background: rgba(226, 232, 240, 0.12);
+  color: #ffffff;
+}
+
+.cosmos-navbar__link.active {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+@media (max-width: 768px) {
+  .cosmos-navbar {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .cosmos-navbar__toggle {
+    display: inline-flex;
+  }
+
+  .cosmos-navbar__nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .cosmos-navbar__nav.open {
+    display: flex;
+  }
+}
